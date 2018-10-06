@@ -13,6 +13,7 @@ import com.example.dsdatsme.mytourguide.fragments.PlaceFragment;
 
 public class CategoryAdapter extends FragmentPagerAdapter {
     private Context mContext;
+
     public CategoryAdapter(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
@@ -22,13 +23,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0)
-            return new FoodFragment();
-        else if (position == 1)
             return new HotelFragment();
-        else if (position == 2)
-            return  new AmusementFragment();
-        else
+        else if (position == 1)
             return new PlaceFragment();
+        else if (position == 2)
+            return new AmusementFragment();
+        else
+            return new FoodFragment();
     }
 
     @Override
@@ -39,12 +40,12 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0)
-            return mContext.getString(R.string.title_food);
-        else if (position == 1)
             return mContext.getString(R.string.title_hotel);
+        else if (position == 1)
+            return mContext.getString(R.string.title_place);
         else if (position == 2)
             return mContext.getString(R.string.title_amusement);
         else
-            return mContext.getString(R.string.title_place);
+            return mContext.getString(R.string.title_food);
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height">140dp</dimen>
+    <dimen name="list_box_height">100dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="size_44">44dp</dimen>
+    <dimen name="mid_padding">16dp</dimen>
+</resources>

@@ -1,34 +1,39 @@
 package com.example.dsdatsme.mytourguide.fragments;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.example.dsdatsme.mytourguide.CategoryAdapter;
 import com.example.dsdatsme.mytourguide.Location;
+import com.example.dsdatsme.mytourguide.LocationAdapter;
+import com.example.dsdatsme.mytourguide.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class FoodFragment extends Fragment {
 
     //constructor
-    public FoodFragment(){}
+    public FoodFragment() {
+    }
 
+    @NonNull
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        List<Location> locations = new ArrayList<>();
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        ArrayList<Location> locations = new ArrayList<>();
 
-        locations.add(new Location(R.string.amusement_name_fantasy, R.drawable.ic_launcher_round,R.string.amusement_name_fantasy );
-        locations.add(new Location(R.string.amusement_name_fantasy, R.drawable.ic_launcher_round,R.string.amusement_name_fantasy );
+        View rootView = inflater.inflate(R.layout.list_view_layout, container, false);
 
-        View rootView = inflater.inflate(R.layout.amusement_list,container, false);
-        CategoryAdapter adapter = new CategoryAdapter (getActivity(), locations);
+        locations.add(new Location(R.string.food_name_panipuri, R.drawable.pani_puri, R.string.food_description_panipuri));
+        locations.add(new Location(R.string.food_name_pavbhaji, R.drawable.bhaji_pav, R.string.food_description_pavbhaji));
+        locations.add(new Location(R.string.food_name_vadapav, R.drawable.vadapav, R.string.food_description_vadapav));
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
+
+        ListView listView = (ListView) rootView.findViewById(R.id.custom_list);
 
         listView.setAdapter(adapter);
 
