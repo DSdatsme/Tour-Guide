@@ -26,7 +26,7 @@ public class FoodFragment extends Fragment {
         locations.add(new Location(R.string.amusement_name_fantasy, R.drawable.ic_launcher_round,R.string.amusement_name_fantasy );
 
         View rootView = inflater.inflate(R.layout.amusement_list,container, false);
-        CategoryAdapter adapter = new CategoryAdapter (getActivity(), locations, R.colo);
+        CategoryAdapter adapter = new CategoryAdapter (getActivity(), locations);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
