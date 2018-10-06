@@ -6,19 +6,21 @@ public class Location {
     private int locationDescription;
 
     //Constructor
-    public Location(int name, int description, int image) {
+    public Location(int name, int image, int description) {
         this.locationName = name;
         this.locationDescription = description;
         this.locationImage = image;
     }
 
-    public int getLocationName(){
+    public int getLocationName() {
         return this.locationName;
     }
-    public int getLocationImage(){
+
+    public int getLocationImage() {
         return this.locationImage;
     }
-    public int getLocationDescription(){
+
+    public int getLocationDescription() {
         return this.locationDescription;
     }
 }

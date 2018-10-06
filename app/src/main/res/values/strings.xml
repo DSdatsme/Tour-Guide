@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">My Tour Guide</string>
 
+    <string name="title_food">Food</string>
+    <string name="title_hotel">Hotel</string>
+    <string name="title_amusement">Amusement</string>
+    <string name="title_place">Places</string>
+
 
     <string name="amusement_name_fantasy">Vardhaman Fantasy</string>
     <string name="amusement_description_fantasy">The garden with replicas of seven wonders of the world.</string>
@@ -10,4 +15,25 @@
     <string name="amusement_description_thakur_mall">A good place to spend time while shopping</string>
     <string name="amusement_name_cinemax">CineMax</string>
     <string name="amusement_description_cinemax">The best place in Mira Road to watch movies!</string>
+
+    <string name="food_name_vadapav">Vada Pav</string>
+    <string name="food_description_vadapav">Most famous street food in Mumbai!!! you can find it anywhere</string>
+    <string name="food_name_pavbhaji">Pav Bhaji</string>
+    <string name="food_description_pavbhaji">Bread served with creamy and buttery gravy.</string>
+    <string name="food_name_panipuri">Pani Puri</string>
+    <string name="food_description_panipuri">Crispy balls filled with sweet/spicy water</string>
+
+    <string name="hotel_name_spicerice">Spice Rice</string>
+    <string name="hotel_description_spicerice">Place where you can find variety of rice dishes</string>
+    <string name="hotel_name_veggies">Veggies</string>
+    <string name="hotel_description_veggies">This is a good place to have your lunch, offers variety of veg options. </string>
+    <string name="hotel_name_darasdhaba">Dara\'s Dhaba</string>
+    <string name="hotel_description_darasdhaba">The best place to spend your night life with a village theme. </string>
+
+    <string name="place_name_gorai">Gorai Beach</string>
+    <string name="place_description_gorai">Beautiful sunset point with the sea water</string>
+    <string name="place_name_pagoda">Pagoda Temple</string>
+    <string name="place_description_pagoda">Just beside the gorai beach, a very beautiful golden temple of Buddha</string>
+    <string name="place_name_tungareshwar">Tungareshwar</string>
+    <string name="place_description_tungareshwar">A mountain trecking point, with many small water falls in way. </string>
 </resources>
