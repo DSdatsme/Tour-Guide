@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Tour Guide</string>
+
+
+    <string name="amusement_name_fantasy">Vardhaman Fantasy</string>
+    <string name="amusement_description_fantasy">The garden with replicas of seven wonders of the world.</string>
+    <string name="amusement_name_municipal_garden">Municipal Garden</string>
+    <string name="amusement_description_municipal_garden">Wanna chill out in green? Visit this place!</string>
+    <string name="amusement_name_thakur_mall">Thakur Mall</string>
+    <string name="amusement_description_thakur_mall">A good place to spend time while shopping</string>
+    <string name="amusement_name_cinemax">CineMax</string>
+    <string name="amusement_description_cinemax">The best place in Mira Road to watch movies!</string>
+</resources>
